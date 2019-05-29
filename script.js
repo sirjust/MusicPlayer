@@ -35,3 +35,25 @@ const createSongList = () => {
 }
 
 document.getElementById("songList").appendChild(createSongList());
+
+songList.onclick = (e) => {
+    const clickedItem = e.target;
+    const source = document.getElementById('source');
+    source.src = 'XenogearsMusic/' + clickedItem.innerText;
+
+    document.getElementById('currentlyPlayingSong').innerText = "Currently Playing:";
+    document.getElementById('currentSong').innerText = clickedItem.innerText;
+
+    player.load();
+    player.play();
+}
+
+const playAudio = () => {
+    if(player.readyState){
+        player.play();
+    }
+}
+
+const pauseAudio = () => {
+    player.pause();
+}
