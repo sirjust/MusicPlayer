@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio id="player" controls="controls">
-        <source id="source" src="XenogearsMusic/Flight.mp3"/>
+    <audio id="player">
         Audio not supported
     </audio>
 
+    <div id="controls">
+        <i class="far fa-play-circle fa-5x"></i>
+        <i class="far fa-pause-circle fa-5x"></i>
+        <p>Volume:</p>
+        <i class="fas fa-volume-down"></i>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+        <i class="fas fa-volume-up"></i>
+    </div>
+
     <h4>My Songs:</h4>
-    <ol>
-        <li>Aveh.mp3</li>
-        <li>Battle Theme.mp3</li>
-        <li>Bonds of Sea and Fire.mp3</li>
-        <li>Boss Battle Theme.mp3</li>
-        <li>Dazil Theme.mp3</li>
-        <li>Ethos Theme.mp3</li>
-        <li>Faraway Promise.mp3</li>
-    </ol>
+    <div id="songList">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

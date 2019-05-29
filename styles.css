@@ -1,0 +1,36 @@
+body{
+    background: radial-gradient(#9696e4, #4545ee);
+    font-size: 1.2em;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 50vh; /*the content will be 50 percent of viewport height*/
+}
+
+#songList{
+    background: lightcyan;
+    border-radius: 10px;
+    text-align: left;
+}
+
+li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+i:hover {
+    cursor: pointer;
+    /* this doesn't work */
+}
+
+#controls {
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    background: lightcyan;
+    padding: 1.5em;
+}
+
+i{
+    color: lightslategray;
+}
