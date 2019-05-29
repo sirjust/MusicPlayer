@@ -34,3 +34,8 @@ i:hover {
 i{
     color: lightslategray;
 }
+
+progress {
+    width: 80%;
+    marging: 10px;
+}
